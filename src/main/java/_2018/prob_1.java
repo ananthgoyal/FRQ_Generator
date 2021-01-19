@@ -38,9 +38,10 @@ public class prob_1 {
         //Version Notice
     }
 
+
     public static void generateDoc(double[] dataSet, String[] stringSet, Paragraph[] paraNum, int num) throws IOException
     {
-        PdfReader reader = new PdfReader("input/tests/input_whited.pdf");
+        PdfReader reader = new PdfReader("input/2018/prob_1/input_whited.pdf");
         PdfDocument srcDoc = new PdfDocument(reader);
         PdfWriter writer = new PdfWriter("results/_2018/prob_1/output" + num + ".pdf");
         PdfDocument pdfDoc = new PdfDocument(writer);
